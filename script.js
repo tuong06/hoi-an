@@ -698,14 +698,8 @@
 
     var coarse = window.matchMedia('(pointer: coarse)').matches;
     var map = L.map(mapEl, { scrollWheelZoom: false, dragging: !coarse, tap: false, zoomSnap: 0.25 });
-    var TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
-    var tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19, attribution: TILE_ATTR }).addTo(map);
-    function tileUrl(on) {
-      return on ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-                : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-    }
-    tiles.setUrl(tileUrl(root.classList.contains('night')));
-    nightListeners.push(function (on) { tiles.setUrl(tileUrl(on)); });
+    // OpenStreetMap standard tiles (no API key). Night mode darkens them with a CSS filter.
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
 
     var layers = { town: L.layerGroup().addTo(map), near: L.layerGroup().addTo(map), ref: L.layerGroup().addTo(map) };
     var markers = {};

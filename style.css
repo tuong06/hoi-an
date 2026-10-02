@@ -268,6 +268,7 @@ html.night .sn-badge { box-shadow: 0 0 26px -2px rgba(255, 150, 60, .75); }
 .map-frame { position: relative; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); isolation: isolate; }
 #map { height: 56vh; min-height: 320px; max-height: 540px; background: #E9E1CF; }
 html.night #map { background: #1A222C; }
+html.night #map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.6); }
 .map-unlock { position: absolute; z-index: 500; top: 10px; right: 10px; min-height: 40px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: .85rem; box-shadow: var(--shadow); }
 .map-unlock[aria-pressed="true"] { background: var(--lantern); color: #fff; }
 .map-fallback { padding: 24px; text-align: center; }
