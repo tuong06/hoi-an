@@ -1,5 +1,7 @@
 # Phố cổ Hội An — 발표 요약 페이지
 
+**Xem trang:** https://tuong06.github.io/hoi-an/
+
 `https://tuong06.github.io/hoi-an/` — 광운대학교 대학한국어(01) 발표 자료. HTML/CSS/JS thuần, không build step; GitHub Pages serve trực tiếp từ nhánh `main` / root.
 
 - Nội dung tiếng Hàn + phiên âm Hangul, nút nghe phát âm (Web Speech API, vi-VN).
