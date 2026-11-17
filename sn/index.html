@@ -4,123 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#bdb5a8">
+<meta name="theme-color" content="#e4dfd7">
 <title>Chúc mừng sinh nhật Thu Huệ</title>
-<meta name="description" content="Một tiệm photobooth nhỏ mở riêng cho sinh nhật Thu Huệ.">
+<meta name="description" content="Mười hai tấm ảnh, năm thước phim và một lá thư cho ngày của Thu Huệ.">
 <meta property="og:title" content="Chúc mừng sinh nhật Thu Huệ">
-<meta property="og:description" content="Có một dải ảnh đang chờ cậu bấm in.">
+<meta property="og:description" content="Mười hai tấm ảnh, năm thước phim và một lá thư.">
 <meta property="og:image" content="assets/img/p01-s.jpg">
-<link rel="preload" href="assets/fonts/fraunces-italic-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
-<div class="flash" aria-hidden="true"></div>
-<canvas class="confetti" aria-hidden="true"></canvas>
-
-<header class="hero wall">
-  <aside class="plaque" aria-label="Lưu ý hôm nay">
-    <i class="screw s1"></i><i class="screw s2"></i><i class="screw s3"></i><i class="screw s4"></i>
-    <p class="plaque-title">
-      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
-      Lưu ý hôm nay
-    </p>
+<header class="hero">
+  <nav class="bar" aria-label="Mục lục">
+    <a class="bar-name" href="#top">Thu Huệ</a>
     <ul>
-      <li>Thu Huệ là nhân vật chính.</li>
-      <li>Được ước ba điều, không cần nói ra.</li>
-      <li>Bánh kem không tính calo.</li>
-      <li>Chụp bao nhiêu tấm cũng được.</li>
+      <li><a href="#anh">Ảnh</a></li>
+      <li><a href="#phim">Phim</a></li>
+      <li><a href="#thu">Thư</a></li>
     </ul>
-  </aside>
+  </nav>
 
-  <div class="mirror">
-    <i class="mount m1"></i><i class="mount m2"></i>
-    <img src="assets/img/p01.jpg" alt="Thu Huệ chụp ảnh qua gương trong tiệm photobooth, mặc áo khoác đen cúc vàng" width="1200" height="1600" fetchpriority="high">
-    <span class="mirror-shine" aria-hidden="true"></span>
-  </div>
-
-  <h1 class="title">
-    <span class="title-small">Chúc mừng sinh nhật</span>
-    <span class="title-name">Thu Huệ</span>
-  </h1>
-
-  <div class="booth">
-    <button class="shutter" type="button" aria-controls="strip" aria-expanded="false">
-      <span class="shutter-ring" aria-hidden="true"></span>
-      <span class="shutter-label">In dải ảnh sinh nhật</span>
-    </button>
-    <div class="slot" aria-hidden="true"></div>
-    <div class="strip-window">
-      <figure class="strip" id="strip" hidden>
-        <img src="assets/img/p02-s.jpg" alt="Thu Huệ đội mũ cao bồi nâu, che nửa mặt bằng điện thoại" loading="lazy" style="object-position:50% 38%">
-        <img src="assets/img/p04-s.jpg" alt="Thu Huệ mỉm cười trong hành lang dán kín ảnh" loading="lazy" style="object-position:50% 52%">
-        <img src="assets/img/p03-s.jpg" alt="Thu Huệ nghiêng đầu với chiếc mũ cao bồi" loading="lazy" style="object-position:55% 48%">
-        <img src="assets/img/p05-s.jpg" alt="Thu Huệ chống tay lên hông trước gương" loading="lazy" style="object-position:50% 52%">
-        <figcaption>
-          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
-          Thu Huệ, tuổi mới
-        </figcaption>
-      </figure>
+  <div class="hero-grid" id="top">
+    <div class="hero-text">
+      <p class="hero-kicker">Chúc mừng sinh nhật</p>
+      <h1 class="hero-name"><span>Thu</span> <span>Huệ</span></h1>
+      <p class="hero-sub">Mười hai tấm ảnh, năm thước phim và một lá thư cho ngày của cậu.</p>
+      <a class="hero-cta" href="#anh">Xem bộ ảnh</a>
     </div>
+    <figure class="hero-photo">
+      <img src="assets/img/p01.jpg" alt="Thu Huệ mỉm cười, chụp qua gương trong tiệm photobooth, mặc áo khoác đen cúc vàng" width="1200" height="1600" fetchpriority="high">
+    </figure>
   </div>
 </header>
 
 <main>
-  <section class="gallery wall" aria-labelledby="g-title">
-    <h2 id="g-title">Bức tường của riêng cậu</h2>
-    <p class="lede">Tiệm người ta dán ảnh của cả trăm người. Tường này chỉ dán mỗi cậu. Chạm vào từng tấm để xem lớn.</p>
-    <ul class="pins">
-      <li><button type="button" data-i="0"><img src="assets/img/p01-s.jpg" alt="Thu Huệ mỉm cười, nhắm mắt, chụp qua gương" loading="lazy" width="640" height="853"></button><span class="note">cười cái là sáng cả tiệm</span></li>
-      <li><button type="button" data-i="1"><img src="assets/img/p02-s.jpg" alt="Cận cảnh Thu Huệ đội mũ cao bồi nâu" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="2"><img src="assets/img/p06-s.jpg" alt="Thu Huệ đứng trước gương vô cực, tay ôm áo phao nâu" loading="lazy" width="640" height="853"></button><span class="note">gương trong gương</span></li>
-      <li><button type="button" data-i="3"><img src="assets/img/p03-s.jpg" alt="Thu Huệ nghiêng người, mũ cao bồi lệch một bên" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="4"><img src="assets/img/p05-s.jpg" alt="Thu Huệ chống hông giữa hành lang dán ảnh" loading="lazy" width="640" height="853"></button><span class="note">dáng này mười điểm</span></li>
-      <li><button type="button" data-i="5"><img src="assets/img/p07-s.jpg" alt="Thu Huệ đội mũ cao bồi, tay cầm lược tím" loading="lazy" width="640" height="853"></button><span class="note">cao bồi có lược tím</span></li>
-      <li><button type="button" data-i="6"><img src="assets/img/p04-s.jpg" alt="Thu Huệ cười nhẹ sau chiếc điện thoại" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="7"><img src="assets/img/p08-s.jpg" alt="Thu Huệ giữa tiệm photobooth, tường dán kín dải ảnh" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="8"><img src="assets/img/p10-s.jpg" alt="Tấm gương trên tường bê tông, Thu Huệ đứng nhỏ xíu ở giữa" loading="lazy" width="640" height="853"></button><span class="note">nhỏ xíu vẫn ra dáng</span></li>
-      <li><button type="button" data-i="9"><img src="assets/img/p09-s.jpg" alt="Toàn cảnh bức tường ảnh, Thu Huệ đứng giữa khung gương" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="10"><img src="assets/img/p12-s.jpg" alt="Thu Huệ chụp từ góc cao, điện thoại che mặt" loading="lazy" width="640" height="853"></button></li>
-      <li><button type="button" data-i="11"><img src="assets/img/p11-s.jpg" alt="Thu Huệ bước trong hành lang photobooth" loading="lazy" width="640" height="853"></button><span class="note">bốt này đi đâu cũng hợp</span></li>
+  <section class="look" id="anh" aria-labelledby="look-title">
+    <div class="head">
+      <h2 id="look-title">Bộ ảnh</h2>
+      <p>Chụp trong một tiệm photobooth, áo khoác đen cúc vàng. Chạm vào ảnh để xem lớn.</p>
+    </div>
+
+    <ul class="plates">
+      <li class="pl a"><button type="button"><img src="assets/img/p01-s.jpg" alt="Thu Huệ mỉm cười, nhắm mắt, chụp qua gương" loading="lazy" width="640" height="853"></button><span>01</span></li>
+      <li class="pl b"><button type="button"><img src="assets/img/p02-s.jpg" alt="Cận cảnh Thu Huệ đội mũ cao bồi nâu" loading="lazy" width="640" height="853"></button><span>02</span></li>
+      <li class="pl c"><button type="button"><img src="assets/img/p06-s.jpg" alt="Thu Huệ đứng trước gương vô cực, tay ôm áo phao nâu" loading="lazy" width="640" height="853"></button><span>03</span></li>
+      <li class="pl d"><button type="button"><img src="assets/img/p03-s.jpg" alt="Thu Huệ nghiêng người, mũ cao bồi lệch một bên" loading="lazy" width="640" height="853"></button><span>04</span></li>
+      <li class="pl e"><button type="button"><img src="assets/img/p05-s.jpg" alt="Thu Huệ chống hông giữa hành lang dán ảnh" loading="lazy" width="640" height="853"></button><span>05</span></li>
+      <li class="pl f"><button type="button"><img src="assets/img/p07-s.jpg" alt="Thu Huệ đội mũ cao bồi, tay cầm lược tím" loading="lazy" width="640" height="853"></button><span>06</span></li>
+      <li class="pl g"><button type="button"><img src="assets/img/p04-s.jpg" alt="Thu Huệ cười nhẹ sau chiếc điện thoại" loading="lazy" width="640" height="853"></button><span>07</span></li>
+      <li class="pl wide"><button type="button"><img src="assets/img/p09.jpg" alt="Toàn cảnh bức tường dán kín dải ảnh, Thu Huệ đứng giữa khung gương" loading="lazy" width="1200" height="1600"></button><span>08</span></li>
+      <li class="pl h"><button type="button"><img src="assets/img/p10-s.jpg" alt="Tấm gương trên tường bê tông, Thu Huệ đứng nhỏ ở giữa" loading="lazy" width="640" height="853"></button><span>09</span></li>
+      <li class="pl i"><button type="button"><img src="assets/img/p08-s.jpg" alt="Thu Huệ giữa tiệm photobooth" loading="lazy" width="640" height="853"></button><span>10</span></li>
+      <li class="pl j"><button type="button"><img src="assets/img/p12-s.jpg" alt="Thu Huệ chụp từ góc cao, điện thoại che mặt" loading="lazy" width="640" height="853"></button><span>11</span></li>
+      <li class="pl k"><button type="button"><img src="assets/img/p11-s.jpg" alt="Thu Huệ bước trong hành lang photobooth" loading="lazy" width="640" height="853"></button><span>12</span></li>
     </ul>
   </section>
 
-  <section class="reel" aria-labelledby="r-title">
-    <h2 id="r-title">Mấy thước phim ngắn</h2>
-    <p class="lede">Năm đoạn, có tiếng. Chạm để phát, vuốt ngang để xem tiếp.</p>
-    <div class="film" tabindex="0" role="group" aria-label="Năm video, vuốt ngang để xem">
-      <div class="frame"><video src="assets/video/v1.mp4" poster="assets/video/v1.jpg" preload="none" playsinline controls aria-label="Video Thu Huệ xoay người trước gương"></video></div>
-      <div class="frame"><video src="assets/video/v2.mp4" poster="assets/video/v2.jpg" preload="none" playsinline controls aria-label="Video Thu Huệ đội mũ, quay cận mặt"></video></div>
-      <div class="frame"><video src="assets/video/v3.mp4" poster="assets/video/v3.jpg" preload="none" playsinline controls aria-label="Video Thu Huệ nằm nghiêng nhìn vào máy"></video></div>
-      <div class="frame"><video src="assets/video/v4.mp4" poster="assets/video/v4.jpg" preload="none" playsinline controls aria-label="Video Thu Huệ nằm nghiêng, ánh sáng tối"></video></div>
-      <div class="frame"><video src="assets/video/v5.mp4" poster="assets/video/v5.jpg" preload="none" playsinline controls aria-label="Video quay trong phòng tối"></video></div>
+  <section class="film" id="phim" aria-labelledby="film-title">
+    <div class="head">
+      <h2 id="film-title">Thước phim</h2>
+      <p>Năm đoạn ngắn, có tiếng.</p>
+    </div>
+    <div class="film-body">
+      <div class="stage">
+        <video id="player" src="assets/video/v1.mp4" poster="assets/video/v1.jpg" preload="none" playsinline controls aria-label="Trước gương"></video>
+      </div>
+      <ol class="clips">
+        <li><button type="button" aria-pressed="true" data-v="1"><img src="assets/video/v1.jpg" alt="" loading="lazy" width="540" height="960"><span class="clip-t">Trước gương</span><span class="clip-d">0:28</span></button></li>
+        <li><button type="button" aria-pressed="false" data-v="2"><img src="assets/video/v2.jpg" alt="" loading="lazy" width="540" height="960"><span class="clip-t">Mũ rộng vành</span><span class="clip-d">0:11</span></button></li>
+        <li><button type="button" aria-pressed="false" data-v="3"><img src="assets/video/v3.jpg" alt="" loading="lazy" width="540" height="960"><span class="clip-t">Nằm nghiêng</span><span class="clip-d">0:15</span></button></li>
+        <li><button type="button" aria-pressed="false" data-v="4"><img src="assets/video/v4.jpg" alt="" loading="lazy" width="540" height="960"><span class="clip-t">Gần hơn</span><span class="clip-d">0:15</span></button></li>
+        <li><button type="button" aria-pressed="false" data-v="5"><img src="assets/video/v5.jpg" alt="" loading="lazy" width="540" height="960"><span class="clip-t">Tắt đèn</span><span class="clip-d">0:15</span></button></li>
+      </ol>
     </div>
   </section>
 
-  <section class="letter-wrap wall" aria-labelledby="l-title">
-    <article class="receipt">
-      <h2 id="l-title">Gửi Thu Huệ</h2>
-      <p>Chúc mừng sinh nhật cậu.</p>
+  <section class="letter" id="thu" aria-labelledby="letter-title">
+    <h2 id="letter-title">Gửi Thu Huệ</h2>
+    <div class="letter-body">
+      <p class="lead">Chúc mừng sinh nhật cậu.</p>
       <p>Tuổi mới chúc cậu ngủ đủ giấc, ăn gì cũng ngon, đi đâu cũng gặp gương đẹp để chụp và luôn có người cầm áo khoác giùm.</p>
       <p>Mong những gì cậu đang cố gắng đều có kết quả xứng đáng. Còn những ngày mệt thì cứ nhắn tớ một câu “đi ăn không”, tớ có mặt.</p>
-      <p>Cảm ơn cậu đã làm bạn của tớ. Năm sau mình lại in một dải ảnh mới nhé.</p>
+      <p>Cảm ơn cậu đã làm bạn của tớ. Năm sau mình lại chụp một bộ mới nhé.</p>
       <p class="sign">Tường</p>
-      <button class="again" type="button">In thêm một dải nữa</button>
-    </article>
+    </div>
   </section>
 </main>
+
+<footer class="foot">
+  <p>Làm tặng Thu Huệ.</p>
+  <a href="#top">Về đầu trang</a>
+</footer>
 
 <dialog class="lightbox" aria-label="Xem ảnh lớn">
   <img alt="">
   <div class="lb-bar">
-    <button type="button" class="lb-prev" aria-label="Ảnh trước">‹</button>
+    <button type="button" class="lb-prev">Trước</button>
     <span class="lb-count" aria-live="polite"></span>
-    <button type="button" class="lb-next" aria-label="Ảnh sau">›</button>
+    <button type="button" class="lb-next">Sau</button>
     <button type="button" class="lb-close">Đóng</button>
   </div>
 </dialog>
 
-<script src="script.js?v=1" defer></script>
+<script src="script.js?v=2" defer></script>
 </body>
 </html>
