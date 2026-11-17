@@ -10,3 +10,7 @@
 - Ngày thuyết trình ở bìa: 2026. 10. 02.
 
 Xem local: `python3 -m http.server 8000` → http://localhost:8000
+
+## Trang sinh nhật Thu Huệ
+
+Thư mục `sn/` là một trang riêng (HTML/CSS/JS thuần, font và media tự host), xem tại `/hoi-an/sn/` sau khi merge vào `main`. Trang có `noindex`.
